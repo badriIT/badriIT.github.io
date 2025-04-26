@@ -1,0 +1,296 @@
+body {
+    border: none;
+    background-color: rgb(239, 239, 239);
+}
+
+.up_info {
+    max-width: 1200px;
+    
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.goback {
+    cursor: pointer;
+    height: fit-content;
+    margin-top: 14px;
+    background-color: rgba(243, 104, 62, 0.863);
+    color: white;
+    border: none;
+    padding: 10px ;
+    border-radius: 20px;
+    max-width: 120px;
+    width: 100%;
+    font-weight: 700;
+}
+
+.Acc {
+    font-weight: 550;
+    font-size: 20px;
+}
+
+.downLine {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.342);
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.photo {
+
+    height: 100px;
+    background-color: rgba(231, 231, 231, 0.884);
+    max-width: 100px;
+    border-radius: 50%;
+    text-align: center;
+    
+    width: 100%;
+}
+
+.PersonalInfo {
+    font-weight: 550;
+    font-size: 28px;
+    color: rgba(243, 104, 62, 0.863);
+}
+
+.ri-user-line {
+    color: white;
+    font-size: 50px;
+    position: relative;
+    top: 20%;
+}
+
+.left_side_info {
+   
+    
+    margin-top: 100px;
+}
+
+.back_to_shopping {
+    cursor: pointer;
+    height: fit-content;
+    margin-top: 14px;
+    background-color: rgba(243, 104, 62, 0.863);
+    color: white;
+    border: none;
+    padding: 10px ;
+    border-radius: 20px;
+    max-width: 120px;
+    width: 100%;
+    font-weight: 700;
+}
+
+.texts {
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+.text {
+    color: gray;
+    font-size: 20px;
+}
+
+
+.Name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.Billing_Payments, .OrderHistory, .GiftCards {
+    font-size: 20px;
+    color: grey;
+}
+.OrderHistory {
+    cursor: pointer;
+}
+
+.PersonalInfo2 {
+    font-family: poppins;
+    font-size: 40px;
+    font-weight: 550;
+}
+
+.down_content {
+    
+  
+    display: flex;
+    max-width: 1200px;
+    gap: 50px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.right_side {
+   max-width: 800px;
+    width: 100%;
+}
+
+.first_card {
+    background-color: white;
+   padding: 30px;
+   border-radius: 30px;
+   max-width: 400px;
+   width: 100%;
+   border: solid 1px rgba(128, 128, 128, 0.584);
+}
+
+.second_card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    max-width: 400px;
+    width: 100%;
+    border: solid 1px rgba(128, 128, 128, 0.584);
+}
+
+
+
+.first_two_card {
+    display: flex;
+    gap: 30px;
+}
+
+.third_card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    max-width: 400px;
+    width: 100%;
+    border: solid 1px rgba(128, 128, 128, 0.584);
+}
+
+.forth_card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    max-width: 400px;
+    width: 100%;
+    border: solid 1px rgba(128, 128, 128, 0.584);
+}
+
+.second_two_card {
+    display: flex;
+    gap: 30px;
+   
+}
+
+.Cards {
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+}
+
+.fifth_card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    max-width: 320px;
+    width: 100%;
+    border: solid 1px rgba(128, 128, 128, 0.584);
+}
+
+.ri-user-3-line, .ri-calendar-2-line, .ri-global-line, .ri-kakao-talk-line {
+    font-size: 24px;
+    position: relative;
+    right: -90%;
+    top: -50%;
+}
+
+.ri-message-2-line {
+    font-size: 24px;
+    position: relative;
+    right: -90%;
+    top: -50%;
+    
+}
+
+.third_two_cards {
+    display: flex;
+    gap: 30px;
+}
+
+.cardTitles {
+    font-weight: 600;
+    font-family: poppins;
+    font-size: 16px;
+    
+}
+
+.goback1 {
+    
+    max-width: 100px;
+    width: 100%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .Cards {
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first_two_card {
+        max-width: 200px;
+        flex-direction: column;
+    }
+
+
+    .second_two_card {
+        max-width: 200px;
+        flex-direction: column;
+    }
+
+    .third_two_cards {
+        max-width: 200px;
+        flex-direction: column;
+    }
+  
+}
+
+
+@media screen and (max-width: 600px) {
+.down_content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.PersonalInfo2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.text {
+    text-align: center;
+}
+
+.Cards {
+    
+   margin: auto;
+ 
+}
+
+    .left_side_info {
+       
+        text-align: center;
+        margin: auto;
+       display: grid;
+       place-content: center;
+       place-self: center;
+    }
+
+    .photo {
+        
+        margin: auto;
+        margin-left: 100px;
+    }
+
+}

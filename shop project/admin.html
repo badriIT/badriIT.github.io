@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <a href="index.html">
+        <button> go back</button>
+        <button onclick="logOut()"> log out</button>
+    </a>
+
+    <div class="whole_content">
+        <div class="left-side">
+
+
+            <div class="upContent">
+                <p class="General-info">General Information</p>
+                <p class="Product-name">Product Name</p>
+                <input class="Product-name-inp" type="text">
+                <p class="Description">Description</p>
+                <textarea class="Description-name" name="" id=""></textarea>
+            </div>
+
+
+
+            <div class="middle-content">
+                <div class="texts">
+                    <p class="Pricing">Pricing</p>
+                </div>
+                <div class="objects">
+                    <div class="price-st">
+                        <p class="price">Base Price</p>
+                        <input class="price-inp" type="number" name="" id="">
+                    </div>
+
+
+                    <div class="rate-st">
+                        <p class="Rate"> Base Rate</p>
+                        <input class="Rate-inp" type="number">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="right-side">
+
+            <div class="image-content">
+                <p class="Product-media">Product Media</p>
+                <p class="Photo-Product">Photo Product</p>
+                <div class="photo_container">
+                 
+                </div>
+                
+            </div>
+
+            <div class="category">
+                <input class="image-inp" type="url" src="submit.gif" alt="Submit" width="48" height="48" placeholder="Enter Image Url">
+                <p class="Category">Category</p>
+                <p class="product-category">Product Category</p>
+                <select class="category-selector" name="" id="">
+                    <option hidden selected value="">Category</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Jewelery">Jewelery</option>
+                    <option value="Men's clothing">Men's clothing</option>
+                    <option value="Women's clothing">Women's clothing</option>
+                </select>
+            </div>
+        </div>
+
+
+       
+    </div>
+
+    <div class="Add-Product">Add Product</div>
+
+    <div class="alert-ProductAdded">
+        <div class="alert alert-danger" role="alert">
+           Product Added Sucsesfull!!!
+          </div>
+        </div>
+
+<div class="productContainer"></div>
+    <script src="admin.js"></script>
+</body>
+
+</html>

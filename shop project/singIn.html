@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="singIn.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "mP61OITLu4UMnA52O",
+      });
+   })();
+</script>
+        
+</head>
+
+<body>
+    <div class="goBackToProducta">
+        <a href="index.html">
+          <button class="backProducts"> <i class="ri-arrow-left-line"></i>  Go back to Products</button>
+        </a>
+      </div>    
+
+
+    <div class="singIn-div">
+        <div class="cart">
+            <svg class="cartSvg" xmlns="http://www.w3.org/2000/svg" width="124" height="102" viewBox="0 0 124 102"
+                fill="none">
+                <path
+                    d="M2 2H15.6523C17.8311 2 19.7535 3.42651 20.3871 5.51343L41.7596 75.9005C42.3932 77.9874 44.3156 79.4139 46.4942 79.4139H94.6487C96.9129 79.4139 98.8889 77.8753 99.4455 75.6779L108.068 41.6561C108.624 39.4586 110.6 37.9201 112.865 37.9201H121.386"
+                    stroke="white" stroke-width="3.75648" stroke-linecap="round" />
+                <path
+                    d="M72.5933 21.7428C71.8686 21.0174 70.6937 21.0174 69.969 21.7428L58.159 33.5667C57.4344 34.2923 57.4344 35.4686 58.159 36.1942C58.8837 36.9197 60.0588 36.9197 60.7835 36.1942L71.2811 25.6842L81.7788 36.1942C82.5035 36.9197 83.6785 36.9197 84.4032 36.1942C85.1279 35.4686 85.1279 34.2923 84.4032 33.5667L72.5933 21.7428ZM73.1369 57.7381V23.0566H69.4254V57.7381H73.1369Z"
+                    fill="white" />
+                <path
+                    d="M58.2909 99.8512C61.3656 99.8512 63.8581 97.3557 63.8581 94.2774C63.8581 91.1991 61.3656 88.7036 58.2909 88.7036C55.2162 88.7036 52.7236 91.1991 52.7236 94.2774C52.7236 97.3557 55.2162 99.8512 58.2909 99.8512Z"
+                    stroke="white" stroke-width="3.00518" />
+                <path
+                    d="M85.5085 99.8512C88.5832 99.8512 91.0757 97.3557 91.0757 94.2774C91.0757 91.1991 88.5832 88.7036 85.5085 88.7036C82.4338 88.7036 79.9412 91.1991 79.9412 94.2774C79.9412 97.3557 82.4338 99.8512 85.5085 99.8512Z"
+                    stroke="white" stroke-width="3.00518" />
+            </svg>
+        </div>
+        <div class="inputs">
+<form class="form" action="">
+            <div class="usernameDiv">
+
+                <div class="forUsername">
+                    <i class="ri-user-3-line"></i>
+                    <input placeholder="USERNAME" class="username" type="text" name="" id="Emailname"  required>
+                </div>
+            </div>
+
+            <div class="EmailDiv">
+                <div class="forPassword">
+                    <i class="ri-mail-line"></i>
+                    <input placeholder="EMAIL" class="email" type="email" name="" required>
+    
+                </div>
+            </div>
+
+
+
+            <div class="passwordDiv">
+                <div class="forPassword">
+                    <i class="ri-lock-line"></i>
+                    <input placeholder="PASSWORD" class="password" type="password" name=""  required>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="login">
+            <div class="loginbtnDiv">
+                <button onclick="login(); sendMail()" class="loginbtn">LOGIN</button>
+
+            </div>
+
+            <div class="forgotPassword">
+                <p class="textForgot"> Forgot password?</p>
+                <p onclick="singUp()" class="Do-not-acc"> Don't have account?</p>
+                
+            </div>
+
+        </form>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="singIn-up">
+        
+        <div class="cart">
+            <svg class="cartSvg" xmlns="http://www.w3.org/2000/svg" width="124" height="102" viewBox="0 0 124 102"
+                fill="none">
+                <path
+                    d="M2 2H15.6523C17.8311 2 19.7535 3.42651 20.3871 5.51343L41.7596 75.9005C42.3932 77.9874 44.3156 79.4139 46.4942 79.4139H94.6487C96.9129 79.4139 98.8889 77.8753 99.4455 75.6779L108.068 41.6561C108.624 39.4586 110.6 37.9201 112.865 37.9201H121.386"
+                    stroke="white" stroke-width="3.75648" stroke-linecap="round" />
+                <path
+                    d="M72.5933 21.7428C71.8686 21.0174 70.6937 21.0174 69.969 21.7428L58.159 33.5667C57.4344 34.2923 57.4344 35.4686 58.159 36.1942C58.8837 36.9197 60.0588 36.9197 60.7835 36.1942L71.2811 25.6842L81.7788 36.1942C82.5035 36.9197 83.6785 36.9197 84.4032 36.1942C85.1279 35.4686 85.1279 34.2923 84.4032 33.5667L72.5933 21.7428ZM73.1369 57.7381V23.0566H69.4254V57.7381H73.1369Z"
+                    fill="white" />
+                <path
+                    d="M58.2909 99.8512C61.3656 99.8512 63.8581 97.3557 63.8581 94.2774C63.8581 91.1991 61.3656 88.7036 58.2909 88.7036C55.2162 88.7036 52.7236 91.1991 52.7236 94.2774C52.7236 97.3557 55.2162 99.8512 58.2909 99.8512Z"
+                    stroke="white" stroke-width="3.00518" />
+                <path
+                    d="M85.5085 99.8512C88.5832 99.8512 91.0757 97.3557 91.0757 94.2774C91.0757 91.1991 88.5832 88.7036 85.5085 88.7036C82.4338 88.7036 79.9412 91.1991 79.9412 94.2774C79.9412 97.3557 82.4338 99.8512 85.5085 99.8512Z"
+                    stroke="white" stroke-width="3.00518" />
+            </svg>
+        </div>
+        <div class="inputs">
+
+            <form class="form" action="">
+            <div class="usernameDiv">
+
+               
+
+                
+
+                <div class="forUsername">
+                    <i class="ri-user-3-line"></i>
+                    <input placeholder="Name" class="Name" type="text" name="" id="name" required>
+                </div>
+            </div>
+
+            
+        
+
+
+            <div class="passwordDiv">
+                <div class="forPassword">
+                    <i class="ri-user-3-line"></i>
+                    <input placeholder="Surname" class="Surname" type="text" name="" id="surname" required>
+
+                </div>
+            </div>
+
+            <div class="usernameDiv">
+
+                <div class="forUsername">
+                    <i class="ri-user-3-line"></i>
+                    <input placeholder="USERNAME" class="username2" type="text" name="" id="username2" required>
+                </div>
+            </div>
+
+
+            <div class="passwordDiv">
+                <div class="forPassword">
+                    <i class="ri-mail-line"></i>
+                    <input placeholder="Email" class="Email" type="email" name="" id="email" required>
+
+                </div>
+            </div>
+
+         
+
+
+            <div class="passwordDiv">
+                <div class="forPassword">
+                    <i class="ri-lock-line"></i>
+                    <input placeholder="PASSWORD" class="password2" type="password" name="" id="password2" required>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="login">
+            <div class="loginbtnDiv">
+                <button onclick="saveUserInfo(event)" id="saveUser" class="loginbtn">Create account</button>
+
+            </div>
+
+            <div class="forgotPassword">
+                <p class="Do-not-acc" onclick="singIn(); ">Already have account?</p>
+         
+                
+            </div>
+
+        </form>
+        </div>
+    </div>
+
+
+<div class="alert-exits">
+    <div class="alert alert-danger" role="alert">
+       this account doesn't exist
+      </div>
+    </div>
+
+    <div class="alert-loginSec">
+        <div class="alert alert-danger" role="alert">
+           Login sucsesfull!!!
+          </div>
+        </div>
+
+
+        <div class="alert-AccCreate">
+            <div class="alert alert-danger" role="alert">
+               Account create sucsesfully!!!
+              </div>
+            </div>
+
+
+            <div class="alert-loginSecAdmin">
+                <div class="alert alert-danger" role="alert">
+                   Login sucsesfull as Admin!!!
+                  </div>
+                </div>
+
+                <div class="alert-loginErrAdmin">
+                    <div class="alert alert-danger" role="alert">
+                       Username Can't Be "ADMIN"
+                      </div>
+                    </div>
+
+
+
+
+
+
+
+                    <script>
+                        function sendMail () {
+                     
+                     
+                         let userInfos = JSON.parse(localStorage.getItem('userInfo')) || [];
+                     
+                     let findUser = userInfos.find(user => user.Username === usernameLogin.value && user.Password === passwordLogin.value && user.Email === emailLogin.value )
+                     
+                     if (findUser) {
+                     
+                         var params ={
+                           name: document.getElementById("Emailname").value,
+                          
+                         };
+                       
+                       const serviceID = "service_hdxjwtq";
+                       const templateID ="template_xin87id";
+                       
+                       emailjs
+                       .send(serviceID, templateID, params )
+                       .then(
+                         res => {
+                           document.getElementById('name').value ="";
+                           console.log(res);
+                           
+                         })
+                       .catch((err) => console.log(err))
+                       
+                       } }
+                       
+                                         </script>
+
+
+
+    <script src="singIn.js"></script>
+    
+</body>
+
+</html>

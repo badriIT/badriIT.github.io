@@ -1,0 +1,512 @@
+*{
+    background: none;
+}
+
+body {
+    background-image: url(Dashboard\ Login.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+padding-right: 0.5px;
+
+}
+
+
+
+
+.cartSvg {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: -180px;
+}
+
+
+
+.username {
+    min-width: 120px;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    padding-left: 50px ;
+    border-radius: 4px;
+    border: 1.5px solid #FFF;
+    width:20vw;
+ 
+height: 45px;
+flex-shrink: 0;
+}
+
+.password {
+    min-width: 120px;
+    font-size: 16px;
+    color: white;
+    padding-left: 50px ;
+    border-radius: 4px;
+    border: 1.5px solid #FFF;
+    width:20vw;
+   
+height: 45px;
+flex-shrink: 0;
+
+}
+
+
+
+
+.backProducts {
+  
+    cursor: pointer;
+   width: 20vw;
+height: 45px;
+flex-shrink: 0;
+border-radius: 4px;
+background: #FFF;
+
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+color: #2148C0;
+max-width: 300px;
+width: 100%;
+text-align: center;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 125% */
+text-transform: uppercase;
+border: none;
+box-shadow: black 0px 0px 20    px 0px ;
+animation-name: moving;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes moving {
+    0% {margin-right: 0px; box-shadow: 0px 0px 0px black;}
+    50% {margin-left: 20px; box-shadow: 0px 0px 25px black}
+
+}
+
+.passwordDiv {
+    display: flex;
+    justify-content: center;
+    
+  
+}
+
+.usernameDiv {
+    display: flex;
+    justify-content: center;
+    
+  
+}
+
+.forUsername {
+    position: relative;
+}
+
+.ri-user-3-line {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    color: white;
+    font-size: 24px;
+}
+.forPassword {
+    position: relative;
+}
+.ri-lock-line {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    color: white;
+    font-size: 24px;
+}
+
+.password::placeholder {
+    color: #b5b5b5;
+
+    
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 142.857% */
+    text-transform: uppercase;
+}
+
+.username::placeholder {
+    color: #b5b5b5;
+
+  
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 142.857% */
+    text-transform: uppercase;
+}
+
+.inputs {
+    
+    
+      
+     margin-top: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 20px;
+}
+
+.loginbtn {
+    min-width: 120px;
+     cursor: pointer;
+    width: 20vw;
+height: 45px;
+flex-shrink: 0;
+border-radius: 4px;
+background: #FFF;
+
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+color: #2148C0;
+
+text-align: center;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 125% */
+text-transform: uppercase;
+border: none;
+box-shadow: black 0px 0px 20    px 0px ;
+}
+
+.singIn-div {
+    width: fit-content;
+    margin: auto;
+}
+
+.loginbtnDiv {
+    animation-iteration-count: infinite;
+    animation-name: loginMoving;
+    animation-duration: 3s;
+    
+    margin-top: 56px;
+    display: flex;
+    
+    justify-content: center;
+    
+}
+
+.forgotPassword {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px   ;
+}
+
+.Do-not-acc {
+    color: #FFF;
+
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.Do-not-acc:hover {
+    border-bottom: 1px white solid;
+}
+
+.ri-mail-line {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    color: white;
+    font-size: 24px;
+}
+
+.textForgot {
+    color: #FFF;
+
+text-align: center;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.singIn-up {
+    margin: auto;
+    width: fit-content;
+    display: none;
+}
+
+.Name {
+    min-width: 120px;
+    font-size: 16px;
+    color: white;
+    padding-left: 50px ;
+    border-radius: 4px;
+    border: 1.5px solid #FFF;
+    width:20vw;
+   
+height: 45px;
+flex-shrink: 0;
+}
+
+.Name::placeholder {
+    color: #b5b5b5;
+
+  
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 142.857% */
+    text-transform: uppercase;
+}
+
+.Surname::placeholder {
+    color: #b5b5b5;
+
+  
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 142.857% */
+    text-transform: uppercase;
+}
+
+.username2::placeholder {
+    color: #b5b5b5;
+
+  
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 142.857% */
+    text-transform: uppercase;
+
+}
+
+.Email::placeholder {
+    color: #b5b5b5;
+
+  
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 142.857% */
+    text-transform: uppercase;
+}
+
+.password2::placeholder {
+    color: #b5b5b5;
+
+  
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 142.857% */
+    text-transform: uppercase;  
+}
+
+
+
+.Surname {
+    min-width: 120px;
+    font-size: 16px;
+    color: white;
+    padding-left: 50px ;
+    border-radius: 4px;
+    border: 1.5px solid #FFF;
+    width:20vw;
+   
+height: 45px;
+flex-shrink: 0;
+}
+
+.username2 {
+    min-width: 120px;
+    font-size: 16px;
+    color: white;
+    padding-left: 50px ;
+    border-radius: 4px;
+    border: 1.5px solid #FFF;
+    width:20vw;
+   
+height: 45px;
+flex-shrink: 0;
+}
+
+
+
+@keyframes loginMoving {
+      0% {transform: scale(1); margin-top: 56px;}
+      50%{transform: scale(1.06); margin-top: 50px;}
+}
+
+.Email {
+    min-width: 120px;
+    font-size: 16px;
+    color: white;
+    padding-left: 50px ;
+    border-radius: 4px;
+    border: 1.5px solid #FFF;
+    width:20vw;
+   
+height: 45px;
+flex-shrink: 0;
+}
+
+.password2 {
+    min-width: 120px;
+    font-size: 16px;
+    color: white;
+    padding-left: 50px ;
+    border-radius: 4px;
+    border: 1.5px solid #FFF;
+    width:20vw;
+   
+height: 45px;
+flex-shrink: 0;
+}
+
+.alert-exits {
+    text-align: center;
+    max-width: 300px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -100%;
+    transition: 0.1s;
+    background-color: rgb(223, 68, 94);
+    color: white;
+    padding: 16px;
+    border-radius: 15px;
+}
+
+.alert-loginSec {
+    text-align: center;
+    max-width: 300px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -100%;
+    transition: 0.1s;
+    background-color: rgb(62, 232, 47);
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    border-radius: 15px;
+}
+
+.alert-loginSecAdmin {
+    text-align: center;
+    max-width: 300px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -100%;
+    transition: 0.1s;
+    background-color: rgb(62, 232, 47);
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    border-radius: 15px;
+}
+
+.alert-loginErrAdmin {
+    text-align: center;
+    max-width: 300px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -100%;
+    transition: 0.1s;
+    background-color: rgb(223, 68, 94);
+    color: white;
+    padding: 16px;
+    border-radius: 15px;
+}
+
+.alert-AccCreate {
+    text-align: center;
+    max-width: 300px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -100%;
+    transition: 0.1s;
+    background-color: rgb(62, 232, 47);
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    border-radius: 15px;
+}
+
+
+.EmailDiv {
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.email {
+    min-width: 120px;
+    font-size: 16px;
+    color: white;
+    padding-left: 50px ;
+    border-radius: 4px;
+    border: 1.5px solid #FFF;
+    width:20vw;
+   
+height: 45px;
+flex-shrink: 0;
+}
+
+.email::placeholder {
+    color: #b5b5b5;
+
+    
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 142.857% */
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 340px ) {
+    .backProducts {
+        justify-content: center;
+        max-width: 80vw;
+    }
+}

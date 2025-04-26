@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect"
+        href="https:styles/liked-product.css styles/Product.css styles/singIn.css styles/style.css//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oleo+Script:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+
+        <nav>
+
+
+            <div class="burgerBtn">
+
+                <label onclick="BurgerMenu()" class="burger" for="burger">
+                    <input onclick="BurgerMenu()" type="checkbox" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+
+
+            </div>
+
+            <div class="all_content">
+
+
+
+                <div class="black_friday">
+
+
+
+                    <div class="box">
+                        <p class="Black">Black</p>
+                    </div>
+
+
+
+
+                    <p class="Friday">Friday</p>
+
+
+
+
+                </div>
+
+
+
+
+                <div class="low_price">
+                    <p class="Up_to">Up to</p>
+                    <p class="percent">59%</p>
+                    <p class="OFF">OFF</p>
+
+                </div>
+
+
+                <div class="shop_now">
+
+                    <div class="shopNow">
+                        <p class="shopNow_text">SHOP NOW</p>
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                            fill="none">
+                            <path d="M3.625 10H17.375" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="#191C1F" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </nav>
+
+
+    </header>
+
+
+
+
+
+    <section class="first_header_section">
+        <div class="all_content_Sec">
+
+
+            <div class="welcome">
+                <p class="welcome_p">Welcome to Clicon online eCommerce store. </p>
+
+
+            </div>
+
+
+
+            <div class="follow_us">
+                <p class="follow">Follow us:</p>
+
+                <div class="medias">
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-facebook-circle-fill"></i>
+                    <i class="ri-pinterest-line"></i>
+                    <i class="ri-reddit-fill"></i>
+                    <i class="ri-youtube-fill"></i>
+                    <i class="ri-instagram-line"></i>
+                </div>
+                <div class="media_language_line"></div>
+
+                <div id="google_translate_element"></div>
+
+                <select class="valute" name="" id="">
+                    <option class="USD" value="$">USD</option>
+                    <option class="EUR" value="€">EUR</option>
+                    <option class="GEL" value="₾">GEL</option>
+                </select>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <section class="headerSection_Third">
+        <div class="full_content">
+
+
+
+            <div class="logo">
+
+                <svg class="logo_svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                    fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24ZM36 24C36 30.6274 30.6274 36 24 36C17.3726 36 12 30.6274 12 24C12 17.3726 17.3726 12 24 12C30.6274 12 36 17.3726 36 24ZM24 32C28.4183 32 32 28.4183 32 24C32 19.5817 28.4183 16 24 16C19.5817 16 16 19.5817 16 24C16 28.4183 19.5817 32 24 32Z"
+                        fill="white" />
+                </svg>
+                <a href="index.html">
+                    <p class="logo_P">CLICON</p>
+                </a>
+
+            </div>
+
+
+
+
+
+
+            <div class="search_bar">
+
+                <div class="search_text">
+                    <i class="ri-search-line"></i>
+                    <input class="searchInp" id="searchInput" placeholder="Search..." type="text"
+                        onkeyup="searchList()">
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+            <div class="third_logos">
+
+
+
+
+                <i onclick="cartOnclick()" class="ri-shopping-cart-line"></i>
+
+                <i onclick="switchTheme()" class="ri-sun-line"></i>
+                <i onclick="switchTheme()" class="ri-contrast-2-line"></i>
+
+                <i onclick="heartRed()" class="ri-heart-3-line"></i>
+
+
+
+
+
+                <i id="acc" class="ri-user-line"></i>
+
+
+
+
+                <a class="singInInfo" href="mainInfo.html">
+
+
+                </a>
+
+
+
+
+
+                <h3 class="userName"> </h3>
+
+
+
+
+
+
+            </div>
+
+
+
+
+    </section>
+
+
+    <section class="services">
+        <div class="content">
+
+            <div class="first_services">
+
+
+                <select class="All_CategoryS" name="" id="">
+                    <option class="All_Category" value="All Category">All Category</option>
+                    <option class="All_Category1" value="All Category">All Category</option>
+                    <option class="All_Category2" value="All Category">All Category</option>
+
+                </select>
+
+
+
+                <div class="first_services_text">
+                    <div class="Track_Order_div">
+                        <i class="ri-map-pin-line"></i>
+                        <p class="Track_Order">Track Order</p>
+                    </div>
+
+                    <div class="Compare_div">
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7.48126 9.34688H2.98126V4.84688" stroke="#5F6C72" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M17.8313 6.16874C17.0659 5.40226 16.1569 4.79418 15.1563 4.3793C14.1558 3.96442 13.0832 3.75087 12 3.75087C10.9168 3.75087 9.84427 3.96442 8.84369 4.3793C7.8431 4.79418 6.93413 5.40226 6.16876 6.16874L2.98126 9.34687"
+                                stroke="#5F6C72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.5187 14.6531H21.0187V19.1531" stroke="#5F6C72" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M6.16876 17.8313C6.93413 18.5977 7.8431 19.2058 8.84368 19.6207C9.84427 20.0356 10.9168 20.2491 12 20.2491C13.0832 20.2491 14.1558 20.0356 15.1563 19.6207C16.1569 19.2058 17.0659 18.5977 17.8313 17.8313L21.0188 14.6531"
+                                stroke="#5F6C72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <p class="Compare">Compare</p>
+                    </div>
+
+
+
+                    <div class="Customer_Support_div">
+
+                        <i class="ri-customer-service-line"></i>
+                        <p class="Customer_Support">Customer Support</p>
+
+                    </div>
+
+                    <div class="Need_Help_div">
+
+
+                        <i class="ri-information-2-line"></i>
+                        <p class="Need_Help">Need Help</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="number">
+
+                <i class="ri-smartphone-line"></i>
+                <p class="phone_number">+1-202-555-0104</p>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <div class="CategoryButtons">
+
+
+
+        <div class="input">
+
+
+
+        </div>
+
+        <div class="options">
+
+            <select class="sort" name="" id="">
+                <option value="price Up">Price: Low to High</option>
+                <option value="price down">Price: High to Low</option>
+                <option value="rate up">Rate: Low to High</option>
+                <option value="rate down">Rate: High to Low</option>
+            </select>
+
+            <button class="AllProductsBtn" onclick="GetAllProducts(); getCards()">All Products</button>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="CardContainer"></div>
+
+
+
+
+
+    <div class="CardContainer2"></div>
+
+
+
+
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        } 
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    <div class="alert-loginErrAdmin">
+        <div class="alert alert-danger" role="alert">
+            You Have to login First!!!
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div class="sul_yvelaferi">
+
+            <div class="zeda_nawili2">
+                <h3>
+                    Overcome Ignorance and
+                    Fight for Quality
+
+                </h3>
+
+                <div class="buttonss">
+
+                    <button class=" RECIEVE_NEWS">
+                        RECIEVE NEWS
+                    </button>
+
+
+
+                    <button class="Buy_now">
+                        Buy now
+                    </button>
+
+
+                </div>
+                <div class="last_footer">
+                    <div class="container">
+
+
+                        <div class="first-part">
+                            <div class="first_list">
+
+                                <p class="navigation"> navigation </p>
+                                <ul class="first_ul">
+                                    <li>Home </li>
+                                    <li>About Us </li>
+                                    <li>What We Do </li>
+                                    <li>To The Power of 10</li>
+                                    <li>Donate</li>
+
+
+
+                                </ul>
+
+                            </div>
+
+
+
+                            <div class="second_list">
+
+                                <p class="what_do"> What We Do</p>
+                                <ul class="second_ul">
+                                    <li> Encouraging Testing </li>
+                                    <li>Strengthening Advocacy </li>
+                                    <li>Sharing Information </li>
+                                    <li>Building Leadership</li>
+                                    <li>Engaging With Global Fund</li>
+                                    <li> Shining a Light</li>
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="second-part">
+
+                            <div class="third_list">
+
+                                <p class="LEGAL"> LEGAL </p>
+                                <ul class="third_ul">
+
+                                    <li>General Info</li>
+                                    <li>Privacy Policy</li>
+                                    <li>Terms of Service</li>
+                            </div>
+
+                            <div class="forth_list">
+
+                                <p class="TALK_us"> TALK TO US</p>
+                                <ul class="forth_ul">
+                                    <li> samstickkz@gmail.com </li>
+                                    <li>+2347032346910 </li>
+                                    <li> Contact Us </li>
+                                    <li> Facebook</li>
+                                    <li> Linkedin</li>
+                                    <li> Twitter</li>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="last_text">
+
+                    <p class="last_logo"> sam's auto</p>
+                    <p class="last_p"> © 2022 sam Media. All Rights Reserved. </p>
+                </div>
+
+
+
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
